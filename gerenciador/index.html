@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Virtual | AM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+    <header class="topo">
+        <h1>Jornal Online - Insira as Notícia</h1>
+    </header>
+    <main class="principal">
+        <form method="POST" action="inserir.php" class="form-control">
+            <p>Data: <input type="date" name="data"></p>
+            <p>Editor: <input type="text" name="editor" placeholder="Insira o Editor"></p>
+            <p>Titulo: <input type="text" name="titulo" placeholder="Insira o Título"></p>
+            <p>Notícia: <br><textarea name="noticia" id="not" cols="50%" rows="8" autocapitalize="setences" spellcheck="true" wrap="soft"></textarea></p>
+            <table>
+                <tr>
+                    <td><input type="radio" name="cat" value="provas"><img src="images/provas.png"></td>
+                    <td><input type="radio" name="cat" value="tarefas"><img src="images/tarefa.png"></td>
+                    <td><input type="radio" name="cat" value="comunicados"><img src="images/comunicado.png"></td>           
+                    <td><input type="radio" name="cat" value="eventos"><img src="images/evento.png"></td>
+                </tr>             
+            </table>
+            <p>
+                <input type="submit" value="Gravar" class="submit gravar">
+                <input type="reset" value="Limpar" class="submit limpar">
+            </p>
+        </form>
+    </main>
+    <nav class="menu">
+        <h1>Menu:</h1>
+        <ul class="list-menu">
+            <li class="li-item"><a href="index.html"><img src="images/home50x50.png" alt="Ícone de página principal"></a></li>
+            <li class="li-item"><a href="listar.php"><img src="images/edit50x50.png" alt="Ícone de lápis simbolizando edição"></a></li>
+            <li class="li-item"><a href="lista_excluir.php"><img src="images/trash50x50.png" alt="Ícone de lixeira"></a></li>
+        </ul>
+    </nav>
+    <footer class="rodape">
+        <p class="dev">@Abner Marquezini</p>
+    </footer>
+    </div>
+</body>
+</html>
